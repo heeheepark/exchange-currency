@@ -59,10 +59,6 @@ function convert() {
   let amount = document.getElementById("from-input").value;
   let convertedAmount = amount * currencyRatio[fromCurrency][toCurrency];
 
-  let numbers = [
-    numbering(amount % 1 )
-  ]
-
   document.getElementById("to-input").value = convertedAmount;
   document.getElementById("from-unit").textContent = amount + currencyRatio[fromCurrency]['unit'];
   document.getElementById("to-unit").textContent = convertedAmount + currencyRatio[toCurrency]['unit'];
