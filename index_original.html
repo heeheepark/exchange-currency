@@ -10,55 +10,32 @@
 <body>
   <div class="exchange_box">
     <div class="dropdown">
-      <button class="dropBtn">
-        <img src="images/korea.jpg" alt="">
-        <span>KRW</span>
-      </button>
-      <div class="dropdown_content">
-        <a href="#">
-          <img src="images/korea.jpg" alt="">
-          <span>KRW</span>
-        </a>
-        <a href="#">
-          <img src="images/USA.jpg" alt="">
-          <span>USD</span>
-        </a>
-        <a href="#">
-          <img src="images/japan.jpg" alt="">
-          <span>JPY</span>
-        </a>
+      <button class="dropBtn" id="from-button">KRW</button>
+      <div class="dropdown_content" id="from-currency-list">
+        <a href="#">KRW</a>
+        <a href="#">USD</a>
+        <a href="#">JPY</a>
       </div>
     </div>
     <div class="input-area">
-      <input type="number">
-      <div>달러</div>
+      <input type="number" id="from-input" onkeyup="convert()" placeholder="금액을 입력하세요">
+      <div id="from-unit">원</div>
     </div>
   </div>
   <h1>=</h1>
   <div class="exchange_box">
     <div class="dropdown">
-      <button class="dropBtn">
-        <img src="images/korea.jpg" alt="">
-        <span>KRW</span>
+      <button class="dropBtn" id="to-button">KRW
       </button>
-      <div class="dropdown_content">
-        <a href="#">
-          <img src="images/korea.jpg" alt="">
-          <span>KRW</span>
-        </a>
-        <a href="#">
-          <img src="images/USA.jpg" alt="">
-          <span>USD</span>
-        </a>
-        <a href="#">
-          <img src="images/japan.jpg" alt="">
-          <span>JPY</span>
-        </a>
+      <div class="dropdown_content" id="to-currency-list">
+        <a href="#">KRW</a>
+        <a href="#">USD</a>
+        <a href="#">JPY</a>
       </div>
     </div>
     <div class="input-area">
-      <input type="number">
-      <div>달러</div>
+      <input type="number" id="to-input" onkeyup="reConvert()">
+      <div id="to-unit">원</div>
     </div>
   </div>
   <script src="main_original.js"></script>

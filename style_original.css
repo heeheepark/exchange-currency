@@ -73,8 +73,15 @@ img {
 
 .input-area input {
   width: 100%;
+  font-size: 15px;
   text-align: end;
   border: none;
+  outline: none;
+  margin: 3px 0;
+}
+
+.input-area div {
+  margin: 3px 0;
 }
 
 .input-area input::-webkit-outer-spin-button,
